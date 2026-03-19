@@ -110,7 +110,7 @@ export default function HeroSection() {
               : "opacity-0 translate-y-8"
           )}
         >
-          Bogazin Kiyisinda Yeni Yasam
+          Boğazın Kıyısında Yeni Yaşam
         </p>
 
         {/* CTAs */}
@@ -127,13 +127,13 @@ export default function HeroSection() {
             href="#iletisim"
             className="border border-[#C9A96E] text-[#C9A96E] px-8 py-3.5 text-sm tracking-[0.12em] uppercase rounded hover:bg-[#C9A96E] hover:text-[#0A0A0A] transition-all duration-700"
           >
-            On Talep Formu
+            Ön Talep Formu
           </a>
           <a
             href="#daireler"
             className="border border-[#A0978A]/30 text-[#A0978A] px-8 py-3.5 text-sm tracking-[0.12em] uppercase rounded hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all duration-700"
           >
-            Kat Planlarini Incele
+            Kat Planlarını İncele
           </a>
         </div>
       </div>
@@ -147,7 +147,7 @@ export default function HeroSection() {
         style={{ transitionDelay: "2000ms" }}
       >
         <span className="text-[#A0978A] text-[10px] tracking-[0.2em] uppercase">
-          Kesfet
+          Keşfet
         </span>
         <div className="w-px h-8 bg-gradient-to-b from-[#C9A96E] to-transparent animate-pulse" />
       </div>

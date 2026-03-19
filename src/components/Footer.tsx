@@ -29,22 +29,22 @@ export default function Footer() {
               Residence Istanbul
             </p>
             <p className="text-[#A0978A]/60 text-sm mt-4 leading-relaxed max-w-xs">
-              Bogazin kiyisinda, luks ve konforun bulusma noktasi.
+              Boğazın kıyısında, lüks ve konforun buluşma noktası.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="text-[#F5F0E8] text-sm tracking-[0.15em] uppercase mb-6">
-              Hizli Erisim
+              Hızlı Erişim
             </h4>
             <div className="space-y-3">
               {[
-                { label: "Proje Hakkinda", href: "#proje" },
+                { label: "Proje Hakkında", href: "#proje" },
                 { label: "Daire Tipleri", href: "#daireler" },
                 { label: "Galeri", href: "#galeri" },
                 { label: "Konum", href: "#konum" },
-                { label: "Iletisim", href: "#iletisim" },
+                { label: "İletişim", href: "#iletisim" },
               ].map((link) => (
                 <a
                   key={link.href}
@@ -60,15 +60,15 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="text-[#F5F0E8] text-sm tracking-[0.15em] uppercase mb-6">
-              Iletisim
+              İletişim
             </h4>
             <div className="space-y-3 text-[#A0978A] text-sm">
               <p>+90 212 XXX XX XX</p>
               <p>info@rivieraresidence.com</p>
               <p className="leading-relaxed">
-                Sariyer, Istanbul
+                Sarıyer, İstanbul
                 <br />
-                Turkiye
+                Türkiye
               </p>
             </div>
           </div>
@@ -85,10 +85,10 @@ export default function Footer() {
           style={{ transitionDelay: "400ms" }}
         >
           <p className="text-[#A0978A]/50 text-xs tracking-wide">
-            &copy; 2026 Riviera Residence. Tum haklar saklidir.
+            &copy; 2026 Riviera Residence. Tüm hakları saklıdır.
           </p>
           <p className="text-[#A0978A]/30 text-xs tracking-wide">
-            MHT Bilisim tarafindan gelistirildi
+            MHT Bilişim tarafından geliştirildi
           </p>
         </div>
       </div>

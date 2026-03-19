@@ -5,8 +5,8 @@ import clsx from "clsx";
 
 const facilities = [
   {
-    name: "Yuzme Havuzu",
-    description: "Kapali ve acik olmak uzere 2 havuz",
+    name: "Yüzme Havuzu",
+    description: "Kapalı ve açık olmak üzere 2 havuz",
     icon: (
       <path
         strokeLinecap="round"
@@ -17,7 +17,7 @@ const facilities = [
   },
   {
     name: "SPA Merkezi",
-    description: "Sauna, buhar odasi ve masaj",
+    description: "Sauna, buhar odası ve masaj",
     icon: (
       <path
         strokeLinecap="round"
@@ -28,7 +28,7 @@ const facilities = [
   },
   {
     name: "Fitness Salonu",
-    description: "Profesyonel ekipmanlarla donatilmis",
+    description: "Profesyonel ekipmanlarla donatılmış",
     icon: (
       <path
         strokeLinecap="round"
@@ -38,8 +38,8 @@ const facilities = [
     ),
   },
   {
-    name: "Cocuk Oyun Alani",
-    description: "Guvenli ve eglenceli alanlar",
+    name: "Çocuk Oyun Alanı",
+    description: "Güvenli ve eğlenceli alanlar",
     icon: (
       <path
         strokeLinecap="round"
@@ -49,8 +49,8 @@ const facilities = [
     ),
   },
   {
-    name: "Toplanti Salonu",
-    description: "Modern is toplanti alanlari",
+    name: "Toplantı Salonu",
+    description: "Modern iş toplantı alanları",
     icon: (
       <path
         strokeLinecap="round"
@@ -61,7 +61,7 @@ const facilities = [
   },
   {
     name: "Concierge",
-    description: "7/24 kisisel asistan hizmeti",
+    description: "7/24 kişisel asistan hizmeti",
     icon: (
       <path
         strokeLinecap="round"
@@ -71,8 +71,8 @@ const facilities = [
     ),
   },
   {
-    name: "Kapali Otopark",
-    description: "Her daireye 2 otopark alani",
+    name: "Kapalı Otopark",
+    description: "Her daireye 2 otopark alanı",
     icon: (
       <path
         strokeLinecap="round"
@@ -82,8 +82,8 @@ const facilities = [
     ),
   },
   {
-    name: "Peyzaj Bahce",
-    description: "Profesyonel peyzaj duzenleme",
+    name: "Peyzaj Bahçe",
+    description: "Profesyonel peyzaj düzenleme",
     icon: (
       <path
         strokeLinecap="round"
@@ -93,8 +93,8 @@ const facilities = [
     ),
   },
   {
-    name: "7/24 Guvenlik",
-    description: "Gelismis guvenlik sistemleri",
+    name: "7/24 Güvenlik",
+    description: "Gelişmiş güvenlik sistemleri",
     icon: (
       <path
         strokeLinecap="round"
@@ -105,7 +105,7 @@ const facilities = [
   },
   {
     name: "Cafe & Lounge",
-    description: "Ozel cafe ve sosyal alanlar",
+    description: "Özel cafe ve sosyal alanlar",
     icon: (
       <path
         strokeLinecap="round"
@@ -136,7 +136,7 @@ export default function Facilities() {
           )}
         >
           <span className="text-[#C9A96E] text-sm tracking-[0.25em] uppercase">
-            Yasam Alanlari
+            Yaşam Alanları
           </span>
           <h2 className="font-[family-name:var(--font-playfair-display)] text-[#F5F0E8] text-3xl md:text-4xl lg:text-5xl mt-4">
             Sosyal Tesisler

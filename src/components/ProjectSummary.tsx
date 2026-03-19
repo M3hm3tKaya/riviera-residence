@@ -36,9 +36,9 @@ function StatItem({ value, suffix, label, isActive, delay, inView }: StatItemPro
 }
 
 const stats = [
-  { value: 45, suffix: "", label: "Katli" },
+  { value: 45, suffix: "", label: "Katlı" },
   { value: 120, suffix: "", label: "Daire" },
-  { value: 95, suffix: "%", label: "Bogaz Manzarasi" },
+  { value: 95, suffix: "%", label: "Boğaz Manzarası" },
   { value: 2027, suffix: "", label: "Teslim" },
 ];
 
@@ -60,7 +60,7 @@ export default function ProjectSummary() {
           )}
         >
           <span className="text-[#C9A96E] text-sm tracking-[0.25em] uppercase">
-            Proje Hakkinda
+            Proje Hakkında
           </span>
           <h2 className="font-[family-name:var(--font-playfair-display)] text-[#F5F0E8] text-3xl md:text-4xl lg:text-5xl mt-4">
             Rakamlarla Riviera

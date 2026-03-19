@@ -5,12 +5,12 @@ import { useInView } from "@/hooks/useInView";
 import clsx from "clsx";
 
 const gallerySlides = [
-  { id: 1, title: "Salon", description: "Genis ve ferah yasam alanlari", image: "/images/interior-1.png" },
-  { id: 2, title: "Yatak Odasi", description: "Huzurlu ve luks uyku deneyimi", image: "/images/interior-2.png" },
-  { id: 3, title: "Mutfak", description: "Ithal tasarim modern mutfaklar", image: "/images/interior-3.png" },
-  { id: 4, title: "Banyo", description: "Dogal mermer detayli banyolar", image: "/images/interior-4.png" },
-  { id: 5, title: "Teras", description: "Bogaz manzarali ozel teraslar", image: "/images/interior-5.png" },
-  { id: 6, title: "Giris Holü", description: "Zarif ve sofistike giris holü", image: "/images/interior-6.png" },
+  { id: 1, title: "Salon", description: "Geniş ve ferah yaşam alanları", image: "/images/interior-1.png" },
+  { id: 2, title: "Yatak Odası", description: "Huzurlu ve lüks uyku deneyimi", image: "/images/interior-2.png" },
+  { id: 3, title: "Mutfak", description: "İthal tasarım modern mutfaklar", image: "/images/interior-3.png" },
+  { id: 4, title: "Banyo", description: "Doğal mermer detaylı banyolar", image: "/images/interior-4.png" },
+  { id: 5, title: "Teras", description: "Boğaz manzaralı özel teraslar", image: "/images/interior-5.png" },
+  { id: 6, title: "Giriş Holü", description: "Zarif ve sofistike giriş holü", image: "/images/interior-6.png" },
 ];
 
 export default function InteriorGallery() {
@@ -58,7 +58,7 @@ export default function InteriorGallery() {
           )}
         >
           <span className="text-[#C9A96E] text-sm tracking-[0.25em] uppercase">
-            Ic Mekan
+            İç Mekan
           </span>
           <h2 className="font-[family-name:var(--font-playfair-display)] text-[#F5F0E8] text-3xl md:text-4xl lg:text-5xl mt-4">
             Galeri

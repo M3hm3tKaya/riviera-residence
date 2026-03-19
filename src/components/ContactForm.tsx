@@ -46,15 +46,15 @@ export default function ContactForm() {
           )}
         >
           <span className="text-[#C9A96E] text-sm tracking-[0.25em] uppercase">
-            Iletisim
+            İletişim
           </span>
           <h2 className="font-[family-name:var(--font-playfair-display)] text-[#F5F0E8] text-3xl md:text-4xl lg:text-5xl mt-4">
-            On Talep Formu
+            Ön Talep Formu
           </h2>
           <div className="w-16 h-px bg-[#C9A96E] mx-auto mt-6" />
           <p className="text-[#A0978A] text-sm mt-6 max-w-md mx-auto">
-            Bilgilerinizi birakin, satis ekibimiz en kisa surede sizinle
-            iletisime gecsin.
+            Bilgilerinizi bırakın, satış ekibimiz en kısa sürede sizinle
+            iletişime geçsin.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export default function ContactForm() {
               onChange={handleChange}
               required
               className="w-full bg-[#141414] border-b border-[#C9A96E]/30 text-[#F5F0E8] px-0 py-3 text-sm focus:outline-none focus:border-[#C9A96E] transition-colors duration-500 placeholder:text-[#A0978A]/30 border-t-0 border-l-0 border-r-0 rounded-none"
-              placeholder="Adiniz ve soyadiniz"
+              placeholder="Adınız ve soyadınız"
             />
           </div>
 
@@ -154,7 +154,7 @@ export default function ContactForm() {
               className="w-full bg-[#141414] border-b border-[#C9A96E]/30 text-[#F5F0E8] px-0 py-3 text-sm focus:outline-none focus:border-[#C9A96E] transition-colors duration-500 border-t-0 border-l-0 border-r-0 rounded-none appearance-none cursor-pointer"
             >
               <option value="" className="bg-[#141414] text-[#A0978A]">
-                Daire tipi seciniz
+                Daire tipi seçiniz
               </option>
               <option value="1+1" className="bg-[#141414]">
                 1+1 (65 m2)
@@ -180,7 +180,7 @@ export default function ContactForm() {
             style={{ transitionDelay: "1000ms" }}
           >
             <label className="text-[#A0978A] text-xs tracking-[0.15em] uppercase block mb-3">
-              Mesajiniz
+              Mesajınız
             </label>
             <textarea
               name="message"
@@ -188,7 +188,7 @@ export default function ContactForm() {
               onChange={handleChange}
               rows={4}
               className="w-full bg-[#141414] border-b border-[#C9A96E]/30 text-[#F5F0E8] px-0 py-3 text-sm focus:outline-none focus:border-[#C9A96E] transition-colors duration-500 placeholder:text-[#A0978A]/30 resize-none border-t-0 border-l-0 border-r-0 rounded-none"
-              placeholder="Mesajinizi yazin (istege bagli)"
+              placeholder="Mesajınızı yazın (isteğe bağlı)"
             />
           </div>
 
@@ -209,7 +209,7 @@ export default function ContactForm() {
                   : "bg-[#C9A96E] text-[#0A0A0A] hover:bg-[#b89555]"
               )}
             >
-              {submitted ? "Talebiniz Alindi" : "On Talep Gonder"}
+              {submitted ? "Talebiniz Alındı" : "Ön Talep Gönder"}
             </button>
           </div>
         </form>

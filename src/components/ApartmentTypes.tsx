@@ -28,7 +28,7 @@ function ApartmentCard({ type, size, features, image, index, inView }: Apartment
       <div className="relative h-56 bg-[#1A1A1A] overflow-hidden">
         <img
           src={image}
-          alt={`${type} daire plani`}
+          alt={`${type} daire planı`}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         {/* Hover overlay */}
@@ -61,7 +61,7 @@ function ApartmentCard({ type, size, features, image, index, inView }: Apartment
         </ul>
 
         <button className="mt-6 w-full text-center text-sm tracking-[0.1em] uppercase text-[#C9A96E] border border-[#1F1F1F] py-3 rounded hover:border-[#C9A96E] hover:bg-[#C9A96E]/5 transition-all duration-700">
-          Detayli Incele
+          Detaylı İncele
         </button>
       </div>
     </div>
@@ -73,23 +73,23 @@ const apartments = [
     type: "1+1",
     size: "65 m\u00B2",
     image: "/images/apartment-1+1.png",
-    features: ["Bogaz manzarasi", "Acik mutfak", "Genis balkon", "Akilli ev sistemi"],
+    features: ["Boğaz manzarası", "Açık mutfak", "Geniş balkon", "Akıllı ev sistemi"],
   },
   {
     type: "2+1",
     size: "110 m\u00B2",
     image: "/images/apartment-2+1.png",
-    features: ["Panoramik manzara", "Ebeveyn banyosu", "Giyinme odasi", "2 balkon"],
+    features: ["Panoramik manzara", "Ebeveyn banyosu", "Giyinme odası", "2 balkon"],
   },
   {
     type: "3+1",
     size: "180 m\u00B2",
     image: "/images/apartment-3+1.png",
     features: [
-      "Tam Bogaz cephesi",
-      "2 ebeveyn suit",
-      "Ozel teras",
-      "Ithal mutfak",
+      "Tam Boğaz cephesi",
+      "2 ebeveyn süit",
+      "Özel teras",
+      "İthal mutfak",
     ],
   },
   {
@@ -98,8 +98,8 @@ const apartments = [
     image: "/images/apartment-4+1.png",
     features: [
       "360\u00B0 manzara",
-      "Ozel asansor",
-      "Cati terasi",
+      "Özel asansör",
+      "Çatı terası",
       "Jakuzi & sauna",
     ],
   },
@@ -125,7 +125,7 @@ export default function ApartmentTypes() {
           )}
         >
           <span className="text-[#C9A96E] text-sm tracking-[0.25em] uppercase">
-            Daire Secenekleri
+            Daire Seçenekleri
           </span>
           <h2 className="font-[family-name:var(--font-playfair-display)] text-[#F5F0E8] text-3xl md:text-4xl lg:text-5xl mt-4">
             Daire Tipleri
