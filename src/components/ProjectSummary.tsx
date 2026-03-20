@@ -24,11 +24,11 @@ function StatItem({ value, suffix, label, isActive, delay, inView }: StatItemPro
       )}
       style={{ transitionDelay: delay }}
     >
-      <span className="font-[family-name:var(--font-playfair-display)] text-[#C9A96E] text-5xl md:text-6xl lg:text-7xl font-semibold">
+      <span className="font-[family-name:var(--font-playfair-display)] text-[#C9A96E] text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold">
         {count}
-        <span className="text-3xl md:text-4xl">{suffix}</span>
+        <span className="text-xl sm:text-3xl md:text-4xl">{suffix}</span>
       </span>
-      <span className="text-[#A0978A] text-sm tracking-[0.15em] uppercase mt-3">
+      <span className="text-[#A0978A] text-xs sm:text-sm tracking-[0.15em] uppercase mt-2 sm:mt-3">
         {label}
       </span>
     </div>
@@ -49,13 +49,13 @@ export default function ProjectSummary() {
     <section
       id="proje"
       ref={ref}
-      className="py-28 md:py-36 bg-[#0A0A0A]"
+      className="py-16 sm:py-28 md:py-36 bg-[#0A0A0A]"
     >
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div
           className={clsx(
-            "text-center mb-20 transition-all duration-[1600ms] ease-out",
+            "text-center mb-12 sm:mb-20 transition-all duration-[1600ms] ease-out",
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           )}
         >
@@ -69,7 +69,7 @@ export default function ProjectSummary() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-0">
           {stats.map((stat, index) => (
             <div key={stat.label} className="relative flex justify-center">
               {/* Vertical Divider */}

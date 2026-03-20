@@ -123,13 +123,13 @@ export default function Facilities() {
     <section
       id="tesisler"
       ref={ref}
-      className="py-28 md:py-36 bg-[#0A0A0A]"
+      className="py-16 sm:py-28 md:py-36 bg-[#0A0A0A]"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div
           className={clsx(
-            "text-center mb-16 transition-all duration-[1600ms] ease-out",
+            "text-center mb-10 sm:mb-16 transition-all duration-[1600ms] ease-out",
             isInView
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"
@@ -145,12 +145,12 @@ export default function Facilities() {
         </div>
 
         {/* Facilities Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-5">
           {facilities.map((facility, index) => (
             <div
               key={facility.name}
               className={clsx(
-                "group relative bg-[#141414] rounded p-6 border border-[#1F1F1F] hover:border-[#C9A96E]/30 text-center transition-all duration-700",
+                "group relative bg-[#141414] rounded p-4 sm:p-6 border border-[#1F1F1F] hover:border-[#C9A96E]/30 text-center transition-all duration-700",
                 isInView
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
@@ -161,7 +161,7 @@ export default function Facilities() {
               }}
             >
               {/* Icon */}
-              <div className="w-12 h-12 mx-auto mb-4 rounded-full border border-[#C9A96E]/20 flex items-center justify-center group-hover:border-[#C9A96E]/50 group-hover:bg-[#C9A96E]/5 transition-all duration-700">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3 sm:mb-4 rounded-full border border-[#C9A96E]/20 flex items-center justify-center group-hover:border-[#C9A96E]/50 group-hover:bg-[#C9A96E]/5 transition-all duration-700">
                 <svg
                   className="w-5 h-5 text-[#C9A96E]"
                   fill="none"

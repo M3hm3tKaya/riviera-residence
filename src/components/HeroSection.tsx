@@ -29,46 +29,46 @@ export default function HeroSection() {
       {/* Top-Left */}
       <div
         className={clsx(
-          "absolute top-8 left-8 transition-all duration-[1800ms] ease-out",
+          "absolute top-4 left-4 sm:top-8 sm:left-8 transition-all duration-[1800ms] ease-out",
           loaded ? "opacity-100" : "opacity-0"
         )}
       >
-        <div className="w-[100px] h-px bg-[#C9A96E]" />
-        <div className="w-px h-[100px] bg-[#C9A96E]" />
+        <div className="w-[50px] sm:w-[100px] h-px bg-[#C9A96E]" />
+        <div className="w-px h-[50px] sm:h-[100px] bg-[#C9A96E]" />
       </div>
       {/* Top-Right */}
       <div
         className={clsx(
-          "absolute top-8 right-8 transition-all duration-[1800ms] ease-out delay-200",
+          "absolute top-4 right-4 sm:top-8 sm:right-8 transition-all duration-[1800ms] ease-out delay-200",
           loaded ? "opacity-100" : "opacity-0"
         )}
       >
-        <div className="w-[100px] h-px bg-[#C9A96E] ml-auto" />
-        <div className="w-px h-[100px] bg-[#C9A96E] ml-auto" />
+        <div className="w-[50px] sm:w-[100px] h-px bg-[#C9A96E] ml-auto" />
+        <div className="w-px h-[50px] sm:h-[100px] bg-[#C9A96E] ml-auto" />
       </div>
       {/* Bottom-Left */}
       <div
         className={clsx(
-          "absolute bottom-8 left-8 transition-all duration-[1800ms] ease-out delay-400",
+          "absolute bottom-4 left-4 sm:bottom-8 sm:left-8 transition-all duration-[1800ms] ease-out delay-400",
           loaded ? "opacity-100" : "opacity-0"
         )}
       >
-        <div className="w-px h-[100px] bg-[#C9A96E]" />
-        <div className="w-[100px] h-px bg-[#C9A96E]" />
+        <div className="w-px h-[50px] sm:h-[100px] bg-[#C9A96E]" />
+        <div className="w-[50px] sm:w-[100px] h-px bg-[#C9A96E]" />
       </div>
       {/* Bottom-Right */}
       <div
         className={clsx(
-          "absolute bottom-8 right-8 transition-all duration-[1800ms] ease-out delay-600",
+          "absolute bottom-4 right-4 sm:bottom-8 sm:right-8 transition-all duration-[1800ms] ease-out delay-600",
           loaded ? "opacity-100" : "opacity-0"
         )}
       >
-        <div className="w-px h-[100px] bg-[#C9A96E] ml-auto" />
-        <div className="w-[100px] h-px bg-[#C9A96E] ml-auto" />
+        <div className="w-px h-[50px] sm:h-[100px] bg-[#C9A96E] ml-auto" />
+        <div className="w-[50px] sm:w-[100px] h-px bg-[#C9A96E] ml-auto" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
         {/* Main Title */}
         <h1
           className={clsx(
@@ -125,13 +125,13 @@ export default function HeroSection() {
         >
           <a
             href="#iletisim"
-            className="border border-[#C9A96E] text-[#C9A96E] px-8 py-3.5 text-sm tracking-[0.12em] uppercase rounded hover:bg-[#C9A96E] hover:text-[#0A0A0A] transition-all duration-700"
+            className="border border-[#C9A96E] text-[#C9A96E] px-6 sm:px-8 py-3.5 min-h-[44px] flex items-center justify-center text-sm tracking-[0.12em] uppercase rounded hover:bg-[#C9A96E] hover:text-[#0A0A0A] transition-all duration-700 w-full sm:w-auto"
           >
             Ön Talep Formu
           </a>
           <a
             href="#daireler"
-            className="border border-[#A0978A]/30 text-[#A0978A] px-8 py-3.5 text-sm tracking-[0.12em] uppercase rounded hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all duration-700"
+            className="border border-[#A0978A]/30 text-[#A0978A] px-6 sm:px-8 py-3.5 min-h-[44px] flex items-center justify-center text-sm tracking-[0.12em] uppercase rounded hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all duration-700 w-full sm:w-auto"
           >
             Kat Planlarını İncele
           </a>
@@ -141,7 +141,7 @@ export default function HeroSection() {
       {/* Scroll Indicator */}
       <div
         className={clsx(
-          "absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 transition-all duration-[2000ms] ease-out",
+          "absolute bottom-6 sm:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 transition-all duration-[2000ms] ease-out",
           loaded ? "opacity-100" : "opacity-0"
         )}
         style={{ transitionDelay: "2000ms" }}

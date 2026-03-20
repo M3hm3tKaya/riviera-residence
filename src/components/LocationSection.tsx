@@ -19,13 +19,13 @@ export default function LocationSection() {
     <section
       id="konum"
       ref={ref}
-      className="py-28 md:py-36 bg-[#0E0E0E]"
+      className="py-16 sm:py-28 md:py-36 bg-[#0E0E0E]"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div
           className={clsx(
-            "text-center mb-16 transition-all duration-[1600ms] ease-out",
+            "text-center mb-10 sm:mb-16 transition-all duration-[1600ms] ease-out",
             isInView
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"
@@ -41,11 +41,11 @@ export default function LocationSection() {
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16">
           {/* Map Placeholder */}
           <div
             className={clsx(
-              "relative aspect-[4/3] bg-[#141414] rounded overflow-hidden border border-[#1F1F1F] transition-all duration-[1600ms] ease-out",
+              "relative aspect-[16/10] sm:aspect-[4/3] bg-[#141414] rounded overflow-hidden border border-[#1F1F1F] transition-all duration-[1600ms] ease-out",
               isInView
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 -translate-x-10"
@@ -74,7 +74,7 @@ export default function LocationSection() {
                 <div
                   key={item.place}
                   className={clsx(
-                    "flex items-center gap-5 py-5 border-b border-[#1F1F1F] group hover:border-[#C9A96E]/20 transition-all duration-700",
+                    "flex items-center gap-3 sm:gap-5 py-4 sm:py-5 border-b border-[#1F1F1F] group hover:border-[#C9A96E]/20 transition-all duration-700 min-h-[44px]",
                     isInView
                       ? "opacity-100 translate-x-0"
                       : "opacity-0 translate-x-8"
@@ -85,7 +85,7 @@ export default function LocationSection() {
                   }}
                 >
                   {/* Icon */}
-                  <div className="w-10 h-10 rounded-full border border-[#C9A96E]/20 flex items-center justify-center shrink-0 group-hover:border-[#C9A96E]/50 transition-colors duration-500">
+                  <div className="w-10 h-10 min-w-[40px] rounded-full border border-[#C9A96E]/20 flex items-center justify-center shrink-0 group-hover:border-[#C9A96E]/50 transition-colors duration-500">
                     <svg
                       className="w-4 h-4 text-[#C9A96E]"
                       fill="none"

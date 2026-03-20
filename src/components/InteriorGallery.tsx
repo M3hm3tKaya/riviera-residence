@@ -45,13 +45,13 @@ export default function InteriorGallery() {
     <section
       id="galeri"
       ref={ref}
-      className="py-28 md:py-36 bg-[#0A0A0A]"
+      className="py-16 sm:py-28 md:py-36 bg-[#0A0A0A]"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div
           className={clsx(
-            "text-center mb-16 transition-all duration-[1600ms] ease-out",
+            "text-center mb-10 sm:mb-16 transition-all duration-[1600ms] ease-out",
             isInView
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"
@@ -77,7 +77,7 @@ export default function InteriorGallery() {
           style={{ transitionDelay: "300ms" }}
         >
           {/* Main Slide */}
-          <div className="relative aspect-[16/9] md:aspect-[21/9] bg-[#141414] overflow-hidden">
+          <div className="relative aspect-[4/3] sm:aspect-[16/9] md:aspect-[21/9] bg-[#141414] overflow-hidden">
             <div
               className={clsx(
                 "absolute inset-0 transition-opacity duration-[800ms]",
@@ -92,8 +92,8 @@ export default function InteriorGallery() {
               />
               {/* Overlay with title */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/80 via-transparent to-transparent" />
-              <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12">
-                <h3 className="font-[family-name:var(--font-playfair-display)] text-[#F5F0E8] text-2xl md:text-3xl mb-2">
+              <div className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8 md:bottom-12 md:left-12">
+                <h3 className="font-[family-name:var(--font-playfair-display)] text-[#F5F0E8] text-lg sm:text-2xl md:text-3xl mb-1 sm:mb-2">
                   {slide.title}
                 </h3>
                 <p className="text-[#A0978A] text-sm">{slide.description}</p>
@@ -108,10 +108,10 @@ export default function InteriorGallery() {
                     gallerySlides.length
                 )
               }
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-[#C9A96E]/30 flex items-center justify-center text-[#C9A96E] hover:bg-[#C9A96E]/10 transition-all duration-500"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 min-w-[44px] min-h-[44px] rounded-full border border-[#C9A96E]/30 flex items-center justify-center text-[#C9A96E] hover:bg-[#C9A96E]/10 transition-all duration-500"
               aria-label="Previous slide"
             >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
               </svg>
             </button>
@@ -119,29 +119,33 @@ export default function InteriorGallery() {
               onClick={() =>
                 goToSlide((currentSlide + 1) % gallerySlides.length)
               }
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-[#C9A96E]/30 flex items-center justify-center text-[#C9A96E] hover:bg-[#C9A96E]/10 transition-all duration-500"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 min-w-[44px] min-h-[44px] rounded-full border border-[#C9A96E]/30 flex items-center justify-center text-[#C9A96E] hover:bg-[#C9A96E]/10 transition-all duration-500"
               aria-label="Next slide"
             >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
               </svg>
             </button>
           </div>
 
           {/* Dots Navigation */}
-          <div className="flex items-center justify-center gap-3 mt-6">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 mt-4 sm:mt-6">
             {gallerySlides.map((s, index) => (
               <button
                 key={s.id}
                 onClick={() => goToSlide(index)}
                 className={clsx(
-                  "transition-all duration-500 rounded-full",
-                  index === currentSlide
-                    ? "w-8 h-2 bg-[#C9A96E]"
-                    : "w-2 h-2 bg-[#A0978A]/30 hover:bg-[#A0978A]/60"
+                  "transition-all duration-500 rounded-full min-w-[44px] min-h-[44px] flex items-center justify-center",
                 )}
                 aria-label={`Go to slide ${index + 1}`}
-              />
+              >
+                <span className={clsx(
+                  "block rounded-full transition-all duration-500",
+                  index === currentSlide
+                    ? "w-8 h-2 bg-[#C9A96E]"
+                    : "w-2 h-2 bg-[#A0978A]/30"
+                )} />
+              </button>
             ))}
           </div>
 

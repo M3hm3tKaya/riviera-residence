@@ -25,7 +25,7 @@ function ApartmentCard({ type, size, features, image, index, inView }: Apartment
       <div className="h-[2px] bg-gradient-to-r from-transparent via-[#C9A96E] to-transparent" />
 
       {/* Apartment Image */}
-      <div className="relative h-56 bg-[#1A1A1A] overflow-hidden">
+      <div className="relative h-48 sm:h-56 bg-[#1A1A1A] overflow-hidden">
         <img
           src={image}
           alt={`${type} daire planı`}
@@ -36,7 +36,7 @@ function ApartmentCard({ type, size, features, image, index, inView }: Apartment
       </div>
 
       {/* Card Content */}
-      <div className="p-6">
+      <div className="p-4 sm:p-6">
         <div className="flex items-baseline justify-between mb-4">
           <h3 className="font-[family-name:var(--font-playfair-display)] text-[#F5F0E8] text-xl font-medium">
             {type}
@@ -60,7 +60,7 @@ function ApartmentCard({ type, size, features, image, index, inView }: Apartment
           ))}
         </ul>
 
-        <button className="mt-6 w-full text-center text-sm tracking-[0.1em] uppercase text-[#C9A96E] border border-[#1F1F1F] py-3 rounded hover:border-[#C9A96E] hover:bg-[#C9A96E]/5 transition-all duration-700">
+        <button className="mt-6 w-full text-center text-sm tracking-[0.1em] uppercase text-[#C9A96E] border border-[#1F1F1F] py-3 min-h-[44px] rounded hover:border-[#C9A96E] hover:bg-[#C9A96E]/5 transition-all duration-700">
           Detaylı İncele
         </button>
       </div>
@@ -112,13 +112,13 @@ export default function ApartmentTypes() {
     <section
       id="daireler"
       ref={ref}
-      className="py-28 md:py-36 bg-[#0E0E0E]"
+      className="py-16 sm:py-28 md:py-36 bg-[#0E0E0E]"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div
           className={clsx(
-            "text-center mb-16 transition-all duration-[1600ms] ease-out",
+            "text-center mb-10 sm:mb-16 transition-all duration-[1600ms] ease-out",
             isInView
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"
@@ -134,7 +134,7 @@ export default function ApartmentTypes() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {apartments.map((apt, index) => (
             <ApartmentCard
               key={apt.type}

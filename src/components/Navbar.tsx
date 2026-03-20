@@ -33,8 +33,8 @@ export default function Navbar() {
           : "bg-transparent"
       )}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <a
             href="#"
@@ -67,7 +67,7 @@ export default function Navbar() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden flex flex-col gap-1.5 p-2"
+            className="lg:hidden flex flex-col gap-1.5 p-3 min-w-[44px] min-h-[44px] items-center justify-center"
             aria-label="Menu"
           >
             <span
@@ -99,13 +99,13 @@ export default function Navbar() {
           mobileOpen ? "max-h-[500px] border-b border-[#1F1F1F]" : "max-h-0"
         )}
       >
-        <div className="px-6 py-6 flex flex-col gap-4">
+        <div className="px-4 sm:px-6 py-6 flex flex-col gap-1">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="text-[#F5F0E8] text-sm tracking-[0.1em] uppercase hover:text-[#C9A96E] transition-colors duration-500 py-2"
+              className="text-[#F5F0E8] text-sm tracking-[0.1em] uppercase hover:text-[#C9A96E] transition-colors duration-500 py-3 min-h-[44px] flex items-center"
             >
               {link.label}
             </a>
@@ -113,7 +113,7 @@ export default function Navbar() {
           <a
             href="#iletisim"
             onClick={() => setMobileOpen(false)}
-            className="text-sm tracking-[0.08em] uppercase border border-[#C9A96E] text-[#C9A96E] px-6 py-2.5 rounded text-center hover:bg-[#C9A96E] hover:text-[#0A0A0A] transition-all duration-500 mt-2"
+            className="text-sm tracking-[0.08em] uppercase border border-[#C9A96E] text-[#C9A96E] px-6 py-3 min-h-[44px] flex items-center justify-center rounded text-center hover:bg-[#C9A96E] hover:text-[#0A0A0A] transition-all duration-500 mt-2"
           >
             Randevu Al
           </a>

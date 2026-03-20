@@ -100,3 +100,21 @@
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
 }
+
+/* Reduce motion for users who prefer it and simplify animations on mobile */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Simplify heavy transitions on mobile */
+@media (max-width: 640px) {
+  .animate-fade-in-up,
+  .animate-fade-in,
+  .animate-slide-left {
+    animation-duration: 0.6s;
+  }
+}

@@ -9,12 +9,12 @@ export default function Footer() {
   return (
     <footer
       ref={ref}
-      className="bg-[#050505] border-t border-[#1F1F1F] py-16"
+      className="bg-[#050505] border-t border-[#1F1F1F] py-10 sm:py-16"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className={clsx(
-            "grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 transition-all duration-[1600ms] ease-out",
+            "grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-12 transition-all duration-[1600ms] ease-out",
             isInView
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"
@@ -49,7 +49,7 @@ export default function Footer() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="block text-[#A0978A] text-sm hover:text-[#C9A96E] transition-colors duration-500"
+                  className="text-[#A0978A] text-sm hover:text-[#C9A96E] transition-colors duration-500 py-1 min-h-[44px] flex items-center"
                 >
                   {link.label}
                 </a>
